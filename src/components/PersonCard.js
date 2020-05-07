@@ -8,7 +8,10 @@ class PersonCard extends Component{
         };
     }
    
-    
+    increment = () => {
+        this.setState({age: this.state.age + 1});
+    }
+   
     render(){
         const { firstName, lastName, age, hairColor } = this.props;
         return(
